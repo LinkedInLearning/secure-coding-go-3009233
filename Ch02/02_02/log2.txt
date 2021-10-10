@@ -1,0 +1,1 @@
+Hacked!'); DROP TABLE logs; --"
