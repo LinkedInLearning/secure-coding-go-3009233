@@ -1,7 +1,10 @@
 # Secure Coding in Go
-This is the repository for the LinkedIn Learning course `Secure Coding in Go`. The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course Secure Coding in Go. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![Secure Coding in Go][lil-thumbnail-url] 
+
+The Go programming language is growing in popularity. Unfortunately, security issues for Go applications are also on the rise. In this course, learn how to secure your Go application to prevent hackers from stealing data or crashing it. Instructor Miki Tebeka explains why developers should care about security, as well as how to prevent SQL injection attacks, identify places where sensitive data is stored and avoid exposing it to the outside world, write code that protects the integrity of the system, and more. Along the way, he provides challenges that allow you to put your new skills to the test.
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -29,8 +32,16 @@ To resolve this issue:
 3. Change directory to the root and run `go mod download`
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+Miki Tebeka 
+                            
+
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/miki-tebeka).
+
+[lil-course-url]: https://www.linkedin.com/learning/secure-coding-in-go
+[lil-thumbnail-url]: https://cdn.lynda.com/course/3009233/3009233-1637778695534-16x9.jpg
 
