@@ -7,14 +7,10 @@ import (
 	"net/http"
 )
 
-const (
-	maxSize = 100 * 1024 // 100KB
-)
-
 func logHandler(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	data, err := io.ReadAll(io.LimitReader(r.Body, maxSize))
+	data, err := io.ReadAll(r.Body)
 	if err != nil {
 		http.Error(w, "can't read", http.StatusBadRequest)
 		return
