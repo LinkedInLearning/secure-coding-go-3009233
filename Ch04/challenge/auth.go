@@ -24,7 +24,7 @@ func (u *User) HasRole(r Role) bool {
 }
 
 func RequestUser(r *http.Request) (User, bool) {
-	token := strings.TrimPrefix("Bearer ", r.Header.Get("Authorization"))
+	token := strings.TrimPrefix(r.Header.Get("Authorization"), "Bearer ")
 	u, ok := users[token]
 	return u, ok
 }
@@ -32,6 +32,6 @@ func RequestUser(r *http.Request) (User, bool) {
 // token -> user
 // FIXME: Use a real and secure database
 var users = map[string]User{
-	"m4ur1c3": {"moss", Admin & Developer & Guest},
+	"m4ur1c3": {"moss", Admin | Developer | Guest},
 	"b4rb3r":  {"jen", Guest},
 }
